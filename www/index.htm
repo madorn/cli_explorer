@@ -564,7 +564,7 @@ $('#authentication_page .test').click(function() {
   $('#stdout').text('');
   $('#stderr').text('');
 
-  url = 'http://' + window.location.hostname + ':4242/api/cli';
+  url = 'http://localhost:4242/api/cli';
   data = "command=" + cli +  "&args=" + args;
   console.log(url + " " + data);
   $('#msg2-text').text('Running command');
@@ -717,7 +717,7 @@ $('#explorer_page .run').click(function() {
   $('#stderr').text('');
   console.log('Executing ' + execute);
 
-  url = 'http://' + window.location.hostname + ':4242/api/cli';
+  url = 'http://localhost:4242/api/cli';
   data = "command=" + cli +  "&args=" + args;
   console.log(url + " " + data);
 
